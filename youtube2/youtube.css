@@ -1,0 +1,43 @@
+:root {
+    /* css애서는 변수를 선언하고 var() 키워드를 써서 사용할 수 있다. 변수 이름 앞에 -- 가 붙는 게 관습*/
+    --header-height: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/*========= header 작업 ===========*/
+
+header {
+    width: calc(100% - 300px);
+    height: var(--header-height);
+    background-color: skyblue;
+    float: right;
+}
+
+.wrap {
+    width: 75%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+}
+
+#search {
+    width: 500px;
+    height: 40px;
+    border-radius: 30px 0px 0px 30px;
+}
