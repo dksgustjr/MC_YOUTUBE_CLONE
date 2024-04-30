@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.header {
+    padding: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu_icon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu_icon:hover {
+    background: #eee;
+}
+
+.menu_icon span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
+
+.logo {
+    padding: 20px 14px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_icon {
+    width: 100px;
+}
+
+.logo_icon:hover{
+    cursor: pointer;
+}
+
+div.search {
+    display: flex;
+    gap: 20px;
+}
+
+.search_bar {
+    display: flex;
+    position: relative;
+}
+
+/*input*/
+input.search {
+    width: 700px;
+    padding: 10px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #aaa;
+}
+
+.search_bar button {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    height: 100%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.voice {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.voice_icon>i{
+    font-size: 20px;
+    color: #000;
+}
+
+.voice:hover {
+    background: #eee;
+}
+
+.login {
+    padding: 6px 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    color:#0000ff;
+}
+
+.login:hover {
+    background: rgba(0, 0, 255, 0.1);
+    cursor: pointer;
+}
+
+.main_wrap{
+    display: flex;
+}
+
+.side_menu {
+    width: 50px;
+}
+
+.container{
+    display: grid;
+    flex: 1;
+    padding: 50px;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 320px);
+    gap: 20px;
+}
+
+.content{
+    /* border: 1px solid #aaa; */
+    position: relative;
+}
+
+.video_thumbnail{
+    /* border: 1px solid #aaa; */
+    border-radius: 15px;
+    width: 100%;
+    height: 215px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content:hover div.video_thumbnail{
+    /* filter: brightness(0.8); */
+    border-radius: 0;
+    transition: 0.4s;
+}
+
+/* .time_wrap{
+    background-color: rgba(0, 0, 0, 0);
+} */
+
+
+.ad_thumbnail{
+    border-radius: 15px;
+    width: 100%;
+    height: 215px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad_thumbnail:hover{
+    filter: brightness(0.4);
+}
+
+.site{
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    bottom: 8px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 25px;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video_time{
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    bottom: 18px;
+    right: 30px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.title_box{
+    /* border: 1px solid #aaa;
+    border-radius: 10px; */
+    width: calc(100%-5px);
+    height: 100px;
+    position: absolute;
+    top: 220px;
+    left: 50px;
+}
+
+.ad_box{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 220px;
+    left: 0px;
+}
+
+.video_title>a>p{
+    font-size: 16px;
+    color: #0f0f0f;
+    margin: 0 0 5px 0;
+}
+
+.channel_icon{
+    /* border: 1px solid #aaa; */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 223px;
+    overflow: hidden;
+}
+
+.channel_name{
+    font-size: 14px;
+    color:#606060;
+    margin: 5px 0;
+}
+
+.views{
+    font-size: 14px;
+    color: #606060;
+    margin: 5px 0 0 0;
+}
+
+mark{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.buy_wrap{
+    width: 30%;
+    height: 20%;
+    background-color: #0f0f0f;
+}
+
+.buy_wrap>a{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.index{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
